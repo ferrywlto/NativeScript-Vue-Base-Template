@@ -1,4 +1,6 @@
 # Default .gitignore repository template - NativeScript Vue Blank Template
+[![CodeFactor](https://www.codefactor.io/repository/github/verdantsparks/nativescript-vue-base-template/badge)](https://www.codefactor.io/repository/github/verdantsparks/nativescript-vue-base-template)
+
 Using this repo to save time from editing .gitignore to ignore MacOS and JetBrains file on top of Visual Studio setting. 
 
 This templates help you jump start your native cross-platform apps with built-in UI elements and best practices. Save time writing boilerplate code over and over again when you create new apps.
@@ -16,12 +18,15 @@ This template repo created by default setting of NativeScript CLI `tns create <n
 
 The `npm run release-ios`,`npm run release-android`,`npm run preview-ios`,`npm run preview-android` commands were added in package.json to provide some typing shortcuts.
 
+Please remove the `LICENSE` file when creating private repositories or change to other [LICENSE](https://choosealicense.com/) file to suit your needs.
+
 ## For Android build
 Android requires release build to be signed. Thus you need to change the Android build command in package.json before build. Otherwise the following error will appear:
 
 `When producing a release build, you need to specify all --key-store-* options.`
 
 Please replace `_PATH_`, `_PW_`, `_ALIAS_`, `_ALIAS_PW_` with your own setup.
+
 `--key-store-path _PATH_ --key-store-password _PW_ --key-store-alias _ALIAS_ --key-store-alias-password _ALIAS_PW_`
 
 To generate key for code signing, you can refer the command below:
@@ -29,8 +34,6 @@ To generate key for code signing, you can refer the command below:
 `keytool -genkey -v -keystore <key_store_path> -alias <alias_name> -keyalg RSA -keysize 2048 -validity 10000`
 
 You should change the `keyalg`, `keysize` and `validity` according to your own need.
-
-Please remove the `LICENSE` file when creating private repositories or change to other [LICENSE](https://choosealicense.com/) file to suit your needs.
 
 ## Quick Start
 Execute the following command to create an app from this template:
