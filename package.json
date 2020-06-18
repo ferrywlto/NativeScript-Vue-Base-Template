@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "preview-ios": "tns run ios --justlaunch --release --no-hmr",
+    "preview-android": "tns run android --justlaunch --release --no-hmr --key-store-path _PATH_ --key-store-password _PW_ --key-store-alias _ALIAS_ --key-store-alias-password _ALIAS_PW_",
+    "release-ios": "tns build ios --env.uglify --env.hiddenSourceMap --release",
+    "release-android": "tns build android --env.uglify --env.hiddenSourceMap --release --key-store-path _PATH_ --key-store-password _PW_ --key-store-alias _ALIAS_ --key-store-alias-password _ALIAS_PW_"
+  },
+  "nativescript": {
+    "id": "org.nativescript.myapp",
+    "tns-android": {
+      "version": "6.5.0"
+    },
+    "tns-ios": {
+      "version": "6.5.0"
+    }
+  },
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "dependencies": {
+    "@nativescript/theme": "~2.3.0",
+    "nativescript-vue": "~2.4.0",
+    "tns-core-modules": "~6.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.1.0",
+    "@babel/preset-env": "~7.1.0",
+    "babel-loader": "~8.0.0",
+    "nativescript-dev-webpack": "~1.5.0",
+    "nativescript-vue-template-compiler": "~2.4.0",
+    "node-sass": "^4.7.1",
+    "vue-loader": "~15.4.0"
+  }
+}
