@@ -1,4 +1,5 @@
 # User Secrets
+**/*/res/values/secrets.xml
 .env.json
 .env.*.json
 .keystore
