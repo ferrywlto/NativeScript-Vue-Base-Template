@@ -12,6 +12,17 @@ It also avoid committing user secrets into git repository. Please have your user
 }
 ```
 
+### Note: For storing secrets in Android manifest file
+In your `App_Resources/Android/src/main/AndroidManifest.xml`, you can refer your secret by key like `@string/google_maps_api_key`, it will then load the values from files like `App_Resources/Android/src/main/res/values/secrets.xml`
+
+```
+//sample content of secrets.xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_maps_api_key">your key</string>
+</resources>
+```
+
 For details please refer to `webpack.config.js` and `app/components/Home.vue` for how to access the environment variables.
 
 This template repo created by default setting of NativeScript CLI `tns create <name>`, using ***npm*** as package manager, and does not have any plugin installed (e.g. Vuex, etc). You have to install them by your own.
