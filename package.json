@@ -18,7 +18,7 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
-    "@nativescript/theme": "~2.3.0",
+    "@nativescript/theme": "~3.0.0",
     "nativescript-vue": "~2.7.1",
     "tns-core-modules": "~6.5.12"
   },
