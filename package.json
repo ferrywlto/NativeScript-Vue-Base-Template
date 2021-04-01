@@ -29,6 +29,6 @@
     "nativescript-dev-webpack": "~1.5.0",
     "nativescript-vue-template-compiler": "~2.7.1",
     "node-sass": "^5.0.0",
-    "vue-loader": "~16.1.2"
+    "vue-loader": "~16.2.0"
   }
 }
